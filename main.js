@@ -2,9 +2,17 @@ var redis = require('redis')
 var multer  = require('multer')
 var express = require('express')
 var fs      = require('fs')
+var opts = require('nomnom').parse();
 var app = express()
 
-var client = redis.createClient(6379, '127.0.0.1', {})
+var redis_port = opts.redis;
+if (!redis_port) {
+  redis_port = 6379;
+}
+
+console.log("Connecting to redis on port " + redis_port);
+
+var client = redis.createClient(redis_port, '127.0.0.1', {})
 
 ///////////// WEB ROUTES
 

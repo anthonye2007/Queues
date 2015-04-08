@@ -12,6 +12,7 @@
   "devDependencies": {
     "express": "^4.12.3",
     "multer": "^0.1.8",
-    "redis": "^0.12.1"
+    "redis": "^0.12.1",
+    "nomnom": "~1.8.1"
   }
 }
