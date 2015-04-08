@@ -1,8 +1,17 @@
-DevOps HW 3
+DevOps HW 4
 =====
 
-[HW 3 Details](https://github.com/CSC-DevOps/Course/blob/master/HW/HW3.md)
+## Setup
+* Ensure nodejs, npm, and forever are installed and on the path
+* Clone, then run `npm install`
+* Install multiple instances of redis (Mine run on 6378 and 6379)
+* Run `node main.js`
 
+## Progress
+* I implemented blue/green git hooks for deploy
+* Got multiple redis instances running but getting an error and couldn't figure out why
+
+## HW 3 details
 I worked with Justin Smith to complete the workshop assignment.
 I completed set/get as well as recent, but nothing more.
 
